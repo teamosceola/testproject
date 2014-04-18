@@ -4,6 +4,8 @@
 #include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
+#include <cstdint>
+#include <cstring>
 #include <sys/ioctl.h>
 #include <fcntl.h>
 #include <linux/i2c-dev.h>
@@ -11,6 +13,8 @@
  class i2c
  {
  private:
+ 	i2c() {}
+
  	int _fd;
  	bool set_address(uint8_t addr);
  	uint8_t _addr;
