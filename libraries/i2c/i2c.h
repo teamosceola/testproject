@@ -16,7 +16,7 @@
  	uint8_t _addr;
  	const char *_device;
 
-public:
+ public:
  	i2c(const char *device);
  	void begin();
  	void end();
